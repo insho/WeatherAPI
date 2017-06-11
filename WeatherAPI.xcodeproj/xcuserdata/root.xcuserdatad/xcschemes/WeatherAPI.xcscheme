@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "61B1F36B1EE2B037004EF725"
-               BuildableName = "ThunderAPI.app"
-               BlueprintName = "ThunderAPI"
-               ReferencedContainer = "container:ThunderAPI.xcodeproj">
+               BuildableName = "WeatherAPI.app"
+               BlueprintName = "WeatherAPI"
+               ReferencedContainer = "container:WeatherAPI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "61B1F36B1EE2B037004EF725"
-            BuildableName = "ThunderAPI.app"
-            BlueprintName = "ThunderAPI"
-            ReferencedContainer = "container:ThunderAPI.xcodeproj">
+            BuildableName = "WeatherAPI.app"
+            BlueprintName = "WeatherAPI"
+            ReferencedContainer = "container:WeatherAPI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "61B1F36B1EE2B037004EF725"
-            BuildableName = "ThunderAPI.app"
-            BlueprintName = "ThunderAPI"
-            ReferencedContainer = "container:ThunderAPI.xcodeproj">
+            BuildableName = "WeatherAPI.app"
+            BlueprintName = "WeatherAPI"
+            ReferencedContainer = "container:WeatherAPI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "61B1F36B1EE2B037004EF725"
-            BuildableName = "ThunderAPI.app"
-            BlueprintName = "ThunderAPI"
-            ReferencedContainer = "container:ThunderAPI.xcodeproj">
+            BuildableName = "WeatherAPI.app"
+            BlueprintName = "WeatherAPI"
+            ReferencedContainer = "container:WeatherAPI.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

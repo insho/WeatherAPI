@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sT1-QJ-YDH">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ThunderAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjU-FM-HGT">
+                                <rect key="frame" x="120" y="120" width="360" height="360"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bjU-FM-HGT" secondAttribute="height" multiplier="1:1" id="aF8-R2-0Mc"/>
+                                </constraints>
+                                <state key="normal" title="Get Weather" image="thunder_image">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="weatherButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2z8-4t-Hat"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xl-Nb-rI6" userLabel="notificationlabel">
+                                <rect key="frame" x="70" y="492" width="459" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="isi-6h-C2Q">
+                                <rect key="frame" x="290" y="492" width="20" height="20"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="isi-6h-C2Q" firstAttribute="top" secondItem="bjU-FM-HGT" secondAttribute="bottom" constant="12" id="03n-Om-Cvj"/>
+                            <constraint firstItem="isi-6h-C2Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H5H-oa-Zbz"/>
+                            <constraint firstItem="bjU-FM-HGT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KZC-Do-Hlq"/>
+                            <constraint firstItem="bjU-FM-HGT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="Tyo-G9-aeZ"/>
+                            <constraint firstItem="3xl-Nb-rI6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VgZ-7L-CRT"/>
+                            <constraint firstItem="bjU-FM-HGT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fMd-pC-qRL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bjU-FM-HGT" secondAttribute="trailing" constant="100" id="lfb-v4-1In"/>
+                            <constraint firstItem="3xl-Nb-rI6" firstAttribute="top" secondItem="bjU-FM-HGT" secondAttribute="bottom" constant="42" id="tBm-b6-fsE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Egu-D8-E9u"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="isi-6h-C2Q" id="PBP-hX-NuU"/>
+                        <outlet property="notificationlabel" destination="3xl-Nb-rI6" id="9jq-ST-DHf"/>
+                        <outlet property="weatherButton" destination="bjU-FM-HGT" id="Mvd-oV-Z4p"/>
+                        <segue destination="9TE-wx-4hw" kind="show" identifier="segueToMap" id="yns-6q-7dW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1090" y="289"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="kII-B3-BhG">
+            <objects>
+                <viewController title="Map" id="9TE-wx-4hw" customClass="Map" customModule="ThunderAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="dmE-rw-iwN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </mapView>
+                    <connections>
+                        <outlet property="mapView" destination="dmE-rw-iwN" id="v48-oJ-3Vg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EMK-TA-mUl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1875" y="289"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uMJ-Ju-CXN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sT1-QJ-YDH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="D6O-P7-bNO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="0Bg-6E-Cs8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uVH-tX-3rO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="288" y="289"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="thunder_image" width="2000" height="1660"/>
+    </resources>
+</document>

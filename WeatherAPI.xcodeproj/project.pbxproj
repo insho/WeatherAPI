@@ -12,16 +12,20 @@
 		61B1F3751EE2B038004EF725 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61B1F3731EE2B038004EF725 /* Main.storyboard */; };
 		61B1F3771EE2B038004EF725 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61B1F3761EE2B038004EF725 /* Assets.xcassets */; };
 		61B1F37A1EE2B038004EF725 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61B1F3781EE2B038004EF725 /* LaunchScreen.storyboard */; };
+		61B1F3821EE2B532004EF725 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B1F3811EE2B532004EF725 /* Map.swift */; };
+		61FB04AC1EE30A3D00D35EED /* Structures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FB04AB1EE30A3D00D35EED /* Structures.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		61B1F36C1EE2B037004EF725 /* ThunderAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThunderAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61B1F36C1EE2B037004EF725 /* WeatherAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61B1F36F1EE2B037004EF725 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61B1F3711EE2B038004EF725 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		61B1F3741EE2B038004EF725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		61B1F3761EE2B038004EF725 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61B1F3791EE2B038004EF725 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61B1F37B1EE2B038004EF725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61B1F3811EE2B532004EF725 /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		61FB04AB1EE30A3D00D35EED /* Structures.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Structures.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +42,7 @@
 		61B1F3631EE2B037004EF725 = {
 			isa = PBXGroup;
 			children = (
-				61B1F36E1EE2B037004EF725 /* ThunderAPI */,
+				61B1F36E1EE2B037004EF725 /* WeatherAPI */,
 				61B1F36D1EE2B037004EF725 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +50,32 @@
 		61B1F36D1EE2B037004EF725 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				61B1F36C1EE2B037004EF725 /* ThunderAPI.app */,
+				61B1F36C1EE2B037004EF725 /* WeatherAPI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		61B1F36E1EE2B037004EF725 /* ThunderAPI */ = {
+		61B1F36E1EE2B037004EF725 /* WeatherAPI */ = {
 			isa = PBXGroup;
 			children = (
 				61B1F36F1EE2B037004EF725 /* AppDelegate.swift */,
 				61B1F3711EE2B038004EF725 /* ViewController.swift */,
+				61B1F3811EE2B532004EF725 /* Map.swift */,
+				61FB04AB1EE30A3D00D35EED /* Structures.swift */,
 				61B1F3731EE2B038004EF725 /* Main.storyboard */,
 				61B1F3761EE2B038004EF725 /* Assets.xcassets */,
 				61B1F3781EE2B038004EF725 /* LaunchScreen.storyboard */,
 				61B1F37B1EE2B038004EF725 /* Info.plist */,
 			);
-			path = ThunderAPI;
+			path = WeatherAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		61B1F36B1EE2B037004EF725 /* ThunderAPI */ = {
+		61B1F36B1EE2B037004EF725 /* WeatherAPI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 61B1F37E1EE2B038004EF725 /* Build configuration list for PBXNativeTarget "ThunderAPI" */;
+			buildConfigurationList = 61B1F37E1EE2B038004EF725 /* Build configuration list for PBXNativeTarget "WeatherAPI" */;
 			buildPhases = (
 				61B1F3681EE2B037004EF725 /* Sources */,
 				61B1F3691EE2B037004EF725 /* Frameworks */,
@@ -79,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = ThunderAPI;
+			name = WeatherAPI;
 			productName = ThunderAPI;
-			productReference = 61B1F36C1EE2B037004EF725 /* ThunderAPI.app */;
+			productReference = 61B1F36C1EE2B037004EF725 /* WeatherAPI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 61B1F3671EE2B037004EF725 /* Build configuration list for PBXProject "ThunderAPI" */;
+			buildConfigurationList = 61B1F3671EE2B037004EF725 /* Build configuration list for PBXProject "WeatherAPI" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -112,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				61B1F36B1EE2B037004EF725 /* ThunderAPI */,
+				61B1F36B1EE2B037004EF725 /* WeatherAPI */,
 			);
 		};
 /* End PBXProject section */
@@ -136,7 +142,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				61B1F3721EE2B038004EF725 /* ViewController.swift in Sources */,
+				61B1F3821EE2B532004EF725 /* Map.swift in Sources */,
 				61B1F3701EE2B037004EF725 /* AppDelegate.swift in Sources */,
+				61FB04AC1EE30A3D00D35EED /* Structures.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,10 +259,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ThunderAPI/Info.plist;
+				INFOPLIST_FILE = WeatherAPI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = insho.ThunderAPI;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = insho.WeatherAPI;
+				PRODUCT_NAME = WeatherAPI;
 			};
 			name = Debug;
 		};
@@ -262,17 +270,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = ThunderAPI/Info.plist;
+				INFOPLIST_FILE = WeatherAPI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = insho.ThunderAPI;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = insho.WeatherAPI;
+				PRODUCT_NAME = WeatherAPI;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		61B1F3671EE2B037004EF725 /* Build configuration list for PBXProject "ThunderAPI" */ = {
+		61B1F3671EE2B037004EF725 /* Build configuration list for PBXProject "WeatherAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				61B1F37C1EE2B038004EF725 /* Debug */,
@@ -281,13 +289,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		61B1F37E1EE2B038004EF725 /* Build configuration list for PBXNativeTarget "ThunderAPI" */ = {
+		61B1F37E1EE2B038004EF725 /* Build configuration list for PBXNativeTarget "WeatherAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				61B1F37F1EE2B038004EF725 /* Debug */,
 				61B1F3801EE2B038004EF725 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
