@@ -25,7 +25,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var notificationlabel: UILabel!
     @IBAction func weatherButtonClick(sender: AnyObject) {
-
+ 
 
         /* First request user location. If get user location succesful, the locationManager "didUpdateLocations"
          method will trigger the API call (makeAPICall method). If api call succesful, perform segue to Map VC. */
